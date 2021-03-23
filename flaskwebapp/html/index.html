@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+ {%block content%}
+
+<div class="container">
+
+<div class="addgallary bg-light ml-2 mr-2 mt-2 mb-2">
+  <h1 class="display-4">Sentiment Prediction</h1>
+  <div class="row">
+    <div class="col">
+      <form action='/' method='POST'>
+  <div class="form-group">
+    <label for="tweet">Enter tweet to predict</label>
+    <input type="text" class="form-control" aria-describedby="Enter Tweet" name="tweet" placeholder="Enter Tweet">
+    <small  class="form-text text-muted">Enter the tweet to predict the sentiment</small>
+  </div>
+
+  <button type="submit" value="submit" class="btn btn-primary">Submit</button>
+</form>
+    </div>
+  </div>
+
+  </div>
+  <div class="addgallary bg-light ml-2 mr-2 mt-2 mb-2">
+    <h1 class="display-3 ml-2 mr-2">
+
+<div class="row"><div class="col" style="
+    padding-top: 3em;">
+    {%if s1 ==0%}
+    <div class="neg">{{tweet}}</div>
+
+    {%else%}
+    <div class="pos">{{tweet}}</div>
+
+    {%endif%}
+
+
+    </div>
+<div  class="col">
+{%if s1 ==0%}
+<div class="neg1"><img src="{{url_for('static',filename='angry.gif') }}" ></div>
+
+{%elif s1==1%}
+<div class="pos1"><img src="{{url_for('static',filename='happy.gif') }}" ></div>
+{%else%}
+
+{%endif%}
+</div>
+</div>
+
+    </h1>
+    </div>
+</div>
+
+
+  {% endblock content %}
