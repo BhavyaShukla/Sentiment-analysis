@@ -123,7 +123,7 @@ would be:
 Ngram k = X - (N - 1)
 Example:
 Sentence : I want to learn Machine Learning
-## Following Are the ScreenShot of the application
+
 
 Unigram: now calculate number of unigrams in sentence using formula
 here, X = 6 and N = 1 (for unigram)
@@ -148,8 +148,11 @@ You can also generate for N=4,5,6 and so on.
 ## Machine learning 
 Algorithm implemented are Logistic Regression, Support Vector Classifier, BNBBernoulliNB, AdaBoostClassifier, RandomForest, Decision Tree, Multi-layer Perceptron
    
-Deep learning
+## Deep learning
 Algorithm implemented is Long Short-Term Memory (LSTM)
+
+
+## Following Are the ScreenShot of the application
 
 Main Page
 
