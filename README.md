@@ -93,7 +93,8 @@ form. (e.g: “Great” to “Good”)
 
 ## Feature extraction: 
 
-### TF-IDF: -TF-IDF is better and accurate technique which is carried out to extract the 
+### TF-IDF: 
+-TF-IDF is better and accurate technique which is carried out to extract the 
 importance of the words to a document in a collection or corpus. Here TF is called as
 Term Frequency and IDF is called as Inverse Document Frequency. Term is nothing 
 but the words or phrases in a document. The importance of the words can be 
